@@ -1,5 +1,12 @@
 console.log("Tic Tac Toe")
 
+
+function togglePopup(){
+   document.getElementById("popup-id").classList.toggle("active"); 
+}
+
+let score = 0; 
+
 const statusDisplay = document.querySelector('.gameStatus');
 let gameActive = false;
 let player1 = "";

@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="popup" id="popup-id">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-button" onclick="togglePopup()">&times;</div>
+            <h1>How to Play:</h1>
+            <p>Player 1, "X" and player 2, "O" take turns marking empty spaces on a 3x3 board.The first player that gets their respective "X" or "O" in three empty spaces horizontally, vertically or diagonlly wins the game.</p>
+        </div>
+    </div>
+    <button onclick="togglePopup()">Instructions</button>
     <section>
         <h1 class="gameTitle">Tic Tac Toe</h1>
         <div class="gameContainer">
