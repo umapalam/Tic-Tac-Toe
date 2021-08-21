@@ -1,7 +1,12 @@
-body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: royalblue; 
+body, html {
+    min-height: 100%;
 }
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("../images/Lake.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
 
 /* instructions popup */
 
@@ -55,8 +60,22 @@ body {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.gameTitle{
-    color: white; 
+/* Title */ 
+
+.titleContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.Title{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    background: linear-gradient(to bottom, #33ccff 0%, #0099ff 100%);
+    text-align: center;
+    border: solid white; 
+    border-radius: 50%;
+    width: 20%;
+    height: 40%;
 }
 
 section {
@@ -79,5 +98,79 @@ section {
     cursor: pointer;
     line-height: 100px;
     font-size: 60px;
+}
+
+.lastSection{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.winScoreContainer{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(to bottom, #33ccff 0%, #0099ff 100%);
+    text-align: center;
+    border: solid white; 
+    border-radius: 50%;
+    width: 30%;
+    height: 50%;  
+}
+
+.restart{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.gameRestart{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    background: linear-gradient(to bottom, #33ccff 0%, #0099ff 100%);
+    text-align: center;
+    border: solid white; 
+    border-radius: 50%;
+    width: 100%;
+    height: 80%; 
+}
+
+.play{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#play-btn{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    background: linear-gradient(to bottom, #33ccff 0%, #0099ff 100%);
+    text-align: center;
+    border: solid white; 
+    border-radius: 50%;
+    width: 100%;
+    height: 70%; 
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.instruc-btn{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    background: linear-gradient(to bottom, #33ccff 0%, #0099ff 100%);
+    text-align: center;
+    border: solid white; 
+    border-radius: 50%;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.gameStatus{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 
